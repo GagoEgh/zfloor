@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <div class="catalog">
+        <div class="catalog" (click)="addClass()">
             <zfloor-burger class="burger"/>
             <p>Каталог</p>
         </div>
@@ -26,8 +26,8 @@
         </div>
         <nav class="nav">
             <div class="path">
-                @for(router of routes; track router.link){
-                    <a [routerLink]="router.link" routerLinkActive="active">{{router.name}}</a>
+                @for(path of paths; track path.link){
+                    <a [routerLink]="path.link" routerLinkActive="active">{{path.name}}</a>
                 }
             </div>
             <div class="icons">
@@ -38,3 +38,4 @@
         </nav>
     </div>
 </header>
+<zfloor-catalog  [ngClass]="changeClass()"/>

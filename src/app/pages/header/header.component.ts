@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { PhoneIcon } from '../../shared/ui/icons/phone.icon';
 import { SearchIcon } from '../../shared/ui/icons/search.incon';
 import { LocationIcon } from '../../shared/ui/icons/location.icon';
@@ -8,10 +8,14 @@ import { ShopingCardIcon } from '../../shared/ui/icons/shoping-card.icon';
 import { BurgerIcon } from '../../shared/ui/icons/burger.icon';
 import { ButtonElement } from '../../shared/ui/button.element';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CatalogComponent } from '../catalog/catalog.component';
+import { PathInterface } from '../../shared/type/path.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'zfloor-header',
   imports: [
+    CommonModule,
     RouterLinkActive,
     RouterLink,
     PhoneIcon,
@@ -21,12 +25,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     LoginIcon,
     ShopingCardIcon,
     BurgerIcon,
-    ButtonElement],
+    ButtonElement,
+    CatalogComponent
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
- public readonly routes = [
+ public readonly paths:PathInterface[] = [
     {link:"company",name:"О компании"},
     {link:"services",name:"Сервисы"},
     {link:"projects",name:"Проекты"},
@@ -34,10 +40,15 @@ export class HeaderComponent {
     {link:"news",name:"Новости"},
     {link:"contacts",name:"Контакты"},
     {link:"reviews",name:"Отзывы"}
-  ]
-}
+  ];
 
-interface RouteInterface {
-  link:string,
-  name:string
+  public isCatalog = signal(false)
+  public addClass(){
+    this.isCatalog.update((current:boolean)=>current = !current);
+    console.log(this.isCatalog())
+  }
+
+  changeClass(){
+    return !this.isCatalog() ? 'catalog-filter':'show-catalog';
+  }
 }
