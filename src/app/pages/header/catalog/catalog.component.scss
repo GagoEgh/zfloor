@@ -1,0 +1,37 @@
+.catalog-filter{
+    display: flex;
+
+    .catalog-type{
+        width: 25%;
+        background-color: var(--color-white);
+        
+        .list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            
+            .item-type{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 25px;
+                font-size: 14px;
+                border-bottom: 1px solid var(--color-border);
+                padding: 20px;
+                cursor: pointer;
+                transition: all 0.2s ease-in;
+
+                &:hover{
+                    background: rgba(198, 143, 78, 0.1);
+                    transition: all 0.2s ease-in;
+                }
+            }
+        }
+    }
+}
+
+.active{
+    background: rgba(198, 143, 78, 0.1);
+}

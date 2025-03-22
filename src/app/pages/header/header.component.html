@@ -1,1 +1,41 @@
-<p>header works!</p>
+<header>
+    <div class="container">
+        <div class="catalog" (click)="addClass()">
+            <zfloor-burger class="burger"/>
+            <p>Каталог</p>
+        </div>
+        <div class="header-info">
+            <div class="logo">
+                <img src="images/logo.png" alt="scale image" routerLink="zorro">
+            </div>
+            <div class="phone">
+                <zfloor-phone/><p>8(800) 775-10-92</p>
+                <zfloor-btn>Заказать обратный звонок</zfloor-btn>
+            </div>
+            <div class="address">
+                <zfloor-location/>
+                <div class="address-text">
+                    <p>Москва, Электродная улица, д. 2 стр. 34</p>
+                    <p>Часы работы: пн-пт, 9:00-18:00</p>
+                </div>
+            </div>
+            <div class="search-data">
+                <zfloor-search/>
+                <input type="text" class="input-text">
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="path">
+                @for(path of paths; track path.link){
+                    <a [routerLink]="path.link" routerLinkActive="active">{{path.name}}</a>
+                }
+            </div>
+            <div class="icons">
+                <zfloor-star class="icon"/>
+                <zfloor-login class="icon"/>
+                <zfloor-shoping-card class="icon"/>
+            </div>
+        </nav>
+    </div>
+</header>
+<zfloor-catalog  [ngClass]="changeClass()"/>

@@ -1,0 +1,12 @@
+:host{
+    width: 75%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-filter-bg);
+    color: var(--color-text);
+    padding-left: 40px;
+    min-height: 332px;
+}

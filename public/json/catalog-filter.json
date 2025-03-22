@@ -1,0 +1,194 @@
+{
+   "katalogFilter":[
+    {
+        "name":"Ковролин",
+        "colors":{
+            "name":"Цвет",
+            "type":[
+                {"name":"Белый","item":"#FFFFFF"},
+                {"name":"Зеленый","item":"#008000"},
+                {"name":"Светлый","item":"#66FF66"},
+                {"name":"Серый","item":"#808080"},
+                {"name":"Черно-белый","item":"#808080"},
+                {"name":"Черный","item":"#000000"},
+                {"name":"Бежевый","item":"#F5DEB3"},
+                {"name":"Бирюзовый","item":"#40E0D0"},
+                {"name":"Бордовый","item":"#800000"},
+                {"name":"Голубой","item":"#0000FF"},
+                {"name":"Желтый","item":"#FFFF00"},
+                {"name":"Коричневый","item":"#8B4513"},
+                {"name":"Красный","item":"#FF0000"},
+                {"name":"Оранжевый","item":"#FFA500"},
+                {"name":"Розовый","item":"#FFC0CB"},
+                {"name":"Салатовый","item":"#7FFF00"},
+                {"name":"Синий","item":"#0000FF"},
+                {"name":"Фиолетовый","item":"#800080"}
+            ]
+        },
+        "types":{
+            "name": "Тип покрытия",
+            "type":["Антистатический","Бытовой","Высоковорсный","Иглопробивной","Коротковорсный","Пожаробезопасный","Тафтинговый","Тканный","Коммерческий"]
+        },
+        "brend":{
+            "name":"Бренд",
+            "type":["Balta Itc","Neva Taft","Agnella","Associated Weavers","Balsan","Beaulieu International Group","Beaulieu Of America","Beaulieu Real","Besmer","Best Wool","Betap","Brintons","Carpet Concept","Carpetoff"]
+        },
+        "roomType":{
+            "name":"Тип помещения",
+            "type": [
+            {"name":"Для офиса","item":"images/filter/office-chair.png"},
+            {"name":"Гостиницы","item":"images/filter/building.png"},
+            {"name":"Для дома","item":"images/filter/home.png"},
+            {"name":"Кинотеатры и театры","item":"images/filter/theatre.png"},
+            {"name":"Рестораны, клубы","item":"images/filter/bar.png"}
+            ]
+        }
+    },
+    {
+        "name":"Линолеум",
+        "colors":{
+            "name":"Цвет",
+            "type":[
+                {"name":"Белый","item":"#FFFFFF"},
+                {"name":"Зеленый","item":"#008000"},
+                {"name":"Светлый","item":"#66FF66"},
+                {"name":"Серый","item":"#808080"},
+                {"name":"Черно-белый","item":"#808080"},
+                {"name":"Черный","item":"#000000"},
+                {"name":"Бежевый","item":"#F5DEB3"},
+                {"name":"Бирюзовый","item":"#40E0D0"},
+                {"name":"Бордовый","item":"#800000"},
+                {"name":"Голубой","item":"#0000FF"},
+                {"name":"Желтый","item":"#FFFF00"},
+                {"name":"Коричневый","item":"#8B4513"},
+                {"name":"Красный","item":"#FF0000"},
+                {"name":"Оранжевый","item":"#FFA500"},
+                {"name":"Розовый","item":"#FFC0CB"},
+                {"name":"Салатовый","item":"#7FFF00"},
+                {"name":"Синий","item":"#0000FF"},
+                {"name":"Фиолетовый","item":"#800080"}
+            ]
+        },
+        "picture":{
+            "name":"Рисунок",
+            "type":["Камень","Под дерево","Под мрамор","Под паркет","Под плитку"]
+        },
+        "types":{
+            "name": "Тип линолеума",
+            "type":["Антистатический","Бытовой","Гетерогенный","Гомогенный","Коммерческий","Полукоммерческий","Противоскользящий","Спортивный","Сценический","Антибактериальный","Морозостойкий","Промышленный"]
+        },
+        "brend":{
+            "name":"Бренд",
+            "type":["Forbo","IVC","JUTEKS","TARKETT","ARMSTRONG","GERFLOR","GRABOPLAST","LENTEX","LG FLOORS","LINO FATRA","POLYFLOR","POLYSTYL"]
+        },
+        "roomType":{
+            "name":"Тип помещения",
+           "type": [
+            {"name":"Офисы","item":"images/filter/office-chair.png"},
+            {"name":"Гостиницы","item":"images/filter/building.png"},
+            {"name":"Домой","item":"images/filter/home.png"},
+            {"name":"Кинотеатры и театры","item":"images/filter/theatre.png"},
+            {"name":"Образовательные, медицинские учреждения","item":"images/filter/teach.png"},
+            {"name":"Рестораны, клубы","item":"images/filter/bar.png"},
+            {"name":"Спортивные учреждения","item":"images/filter/ball.png"},
+            {"name":"Торговые центры","item":"images/filter/store.png"}
+        ]
+        }
+    },
+    {
+        "name":"Ламинат",
+        "colors":{
+            "name":"Цвет",
+            "type":[
+                {"name":"Белый","item":"#FFFFFF"},
+                {"name":"Зеленый","item":"#008000"},
+                {"name":"Светлый","item":"#66FF66"},
+                {"name":"Серый","item":"#808080"},
+                {"name":"Черно-белый","item":"#808080"},
+                {"name":"Черный","item":"#000000"},
+                {"name":"Бежевый","item":"#F5DEB3"},
+                {"name":"Бирюзовый","item":"#40E0D0"},
+                {"name":"Бордовый","item":"#800000"},
+                {"name":"Голубой","item":"#0000FF"},
+                {"name":"Желтый","item":"#FFFF00"},
+                {"name":"Коричневый","item":"#8B4513"},
+                {"name":"Красный","item":"#FF0000"},
+                {"name":"Оранжевый","item":"#FFA500"},
+                {"name":"Розовый","item":"#FFC0CB"},
+                {"name":"Салатовый","item":"#7FFF00"},
+                {"name":"Синий","item":"#0000FF"},
+                {"name":"Фиолетовый","item":"#800080"}
+            ]
+        },
+        "class":["33 класс","32 класс"],
+        "picture":{
+            "name":"Рисунок",
+            "type":["Художественный"]
+        },
+        "brend":{
+            "name":"Бренд",
+            "type":["HARO","Kronopol","QUICK STEP","VILLEROY & BOCH","Biela CBM","Bohofloor","Floorway","KRONOTEX","My Floor","My Step","PARADOR","Rooms","Wineo"]
+        },
+        "thickness":{
+           "name": "Толщина",
+           "size":["10 мм","12 мм","8 мм"]
+        }
+    },
+    {
+        "name":"Виниловая плитка",
+        "colors":{
+            "name":"Цвет",
+            "type":[
+                {"name":"Белый","item":"#FFFFFF"},
+                {"name":"Зеленый","item":"#008000"},
+                {"name":"Светлый","item":"#66FF66"},
+                {"name":"Серый","item":"#808080"},
+                {"name":"Черно-белый","item":"#808080"},
+                {"name":"Черный","item":"#000000"},
+                {"name":"Бежевый","item":"#F5DEB3"},
+                {"name":"Бирюзовый","item":"#40E0D0"},
+                {"name":"Бордовый","item":"#800000"},
+                {"name":"Голубой","item":"#0000FF"},
+                {"name":"Желтый","item":"#FFFF00"},
+                {"name":"Коричневый","item":"#8B4513"},
+                {"name":"Красный","item":"#FF0000"},
+                {"name":"Оранжевый","item":"#FFA500"},
+                {"name":"Розовый","item":"#FFC0CB"},
+                {"name":"Салатовый","item":"#7FFF00"},
+                {"name":"Синий","item":"#0000FF"},
+                {"name":"Фиолетовый","item":"#800080"}
+            ]
+        },
+
+        "types":{
+            "name": "Тип покрытия",
+            "type":["Антистатический","Бытовой","Гетерогенный","Гомогенный","Коммерческий"]
+        },
+        "brend":{
+            "name":"Бренд",
+            "type":["Alpine Floor","AquaFloor","Arbiton","Falqoun","FineFloor","FORBO","Gerflor","Graboplast","Interface","IVC","LG FLOORS","Lino Fatra","Moduleo","Polyflex","POLYFLOR","POLYSTYL"]
+        },
+        "roomType":{
+            "name":"Тип помещения",
+           "type": [
+            {"name":"Офисы","item":"images/filter/office-chair.png"},
+            {"name":"Гостиницы","item":"images/filter/building.png"},
+            {"name":"Домой","item":"images/filter/home.png"},
+            {"name":"Кинотеатры и театры","item":"images/filter/theatre.png"},
+            {"name":"Образовательные, медицинские учреждения","item":"images/filter/teach.png"},
+            {"name":"Рестораны, клубы","item":"images/filter/bar.png"},
+            {"name":"Спортивные учреждения","item":"images/filter/ball.png"},
+            {"name":"Торговые центры","item":"images/filter/store.png"}
+        ]
+        }
+    },
+    {
+        "name":"Ковровая плитка",
+        "brend":{
+            "name":"Бренд",
+            "type":["Balance","BALSAN","Betap","BURMATEX","DESSO","ESCOM","FORBO","INTERFACE","Milliken","Tecsom","Condor Carpets","Domo Modulyss","EGE","Halbmond","LCT","PVH","Ruscarpettiles RCT","Shaw","Sintelon","Voxflor"]
+        }
+    }
+   ]
+}
+

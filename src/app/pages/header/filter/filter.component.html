@@ -1,0 +1,21 @@
+<div class="container">
+    @if (catalogFilter()?.colors) {
+        <zfloor-colors [colors]="catalogFilter()?.colors"></zfloor-colors>
+    }
+    
+    @if (catalogFilter()?.roomType) {
+        <zfloor-room-types [roomType]="catalogFilter()?.roomType"></zfloor-room-types>
+    }
+    
+    @if (catalogFilter()?.types) {
+        <zfloor-coverage [coverage]="catalogFilter()?.types"></zfloor-coverage>
+    }
+    
+    @if (catalogFilter()?.brend) {
+        <zfloor-brend [brend]="catalogFilter()?.brend"></zfloor-brend>
+    }
+    
+    @if (catalogFilter()?.picture) {
+        <zfloor-picture [picture]="catalogFilter()?.picture"></zfloor-picture>
+    }
+</div>

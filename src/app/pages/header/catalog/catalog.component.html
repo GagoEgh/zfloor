@@ -1,0 +1,22 @@
+<div class="catalog-filter">
+    <nav class="catalog-type">
+        <ul class="list" (click)="moveThroughFilter($event,el)" #el>
+            <li class="item-type active">
+                <zfloor-kovrolin/>Ковролин<zfloor-vector-right/>
+            </li>
+            <li class="item-type" >
+                <zfloor-kovr-tiles/>Ковровая плитка<zfloor-vector-right/>
+            </li>
+            <li class="item-type" >
+                <zfloor-linoleum/>Линолеум<zfloor-vector-right/>
+            </li>
+            <li class="item-type">
+                <zfloor-pvh/>Виниловая плитка<zfloor-vector-right/>
+            </li>
+            <li class="item-type" >
+                <zfloor-laminat/>Ламинат<zfloor-vector-right/>
+            </li>
+        </ul>
+    </nav>
+    <zfloor-filter [catalogFilter]="catalogFilter"></zfloor-filter>
+</div>
