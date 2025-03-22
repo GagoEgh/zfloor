@@ -1,0 +1,17 @@
+<div class="container">
+    <h5>{{coverage()?.name}} ({{coverage()?.type?.length}})</h5>
+    <ul>
+        @for(type of coverage()?.type; track type; let index= $index){
+            @if(index<7 && !allColors()){
+                <li class="type-list" (click)="secletColor(type)">
+                    {{type}}
+                </li>   
+            }@else if( allColors()) {
+                <li class="type-list" (click)="secletColor(type)">
+                     {{type}}
+                </li>
+            }
+        }
+        <p class="showAll" (click)="showAll()">Показать все<zfloor-arrow-down/></p>
+    </ul>
+</div>

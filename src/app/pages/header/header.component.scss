@@ -29,14 +29,14 @@ header{
             cursor: pointer;
             padding: 5px;
             width: 170px;
-            height: 40px;
+            height: 34px;
             position: absolute;
             left: 0; 
             top:57px;
             transition: all 0.5s ease-out;
 
             &:active{
-                background-color: var(--color-white);
+                background-color: var(--color-peru-light);
                 color: var(--color-peru);
                 transition: all 0.5s ease-out;
             }
@@ -131,9 +131,11 @@ header{
 
 .catalog-filter{
     position: absolute;
-    top: -200px;
+    top: -1170px;
     z-index: -99;
     transition: 1s all ease-out;
+
+    width: 99%;
 }
 
 .show-catalog{
@@ -141,4 +143,5 @@ header{
     top: 100px;
     z-index: -99;
     transition: 1s all ease-out;
+    width: 99%;
 }

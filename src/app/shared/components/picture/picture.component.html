@@ -1,0 +1,18 @@
+<div class="container">
+    <h5>{{picture()?.name}} ({{picture()?.type?.length}})</h5>
+    <ul>
+        @for(type of picture()?.type; track type; let index= $index){
+            @if(index<7 && !allColors()){
+                <li class="type-list" (click)="secletColor(type)">
+                    {{type}}
+                </li>   
+            }@else if( allColors()) {
+                <li class="type-list" (click)="secletColor(type)">
+                     {{type}}
+                </li>
+            }
+        }
+        <p class="showAll" (click)="showAll()">Показать все<zfloor-arrow-down/></p>
+    </ul>
+</div>
+

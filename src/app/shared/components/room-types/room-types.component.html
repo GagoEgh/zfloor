@@ -1,0 +1,16 @@
+<div class="container">
+    <h5>{{roomType()?.name}}({{roomType()?.type?.length}}) </h5>
+    <ul>
+        @for(item of roomType()?.type; track item.name; let index= $index){
+            @if(index<3 && !allColors()){
+                <li class="type-list" (click)="secletColor(item.name)">
+                <img [src]="item.item">  {{item.name}}</li>   
+            }@else if( allColors()) {
+                <li class="type-list" (click)="secletColor(item.name)">
+                    <img [src]="item.item">  {{item.name}}
+                </li>
+            }
+        }
+        <p class="showAll" (click)="showAll()">Показать все<zfloor-arrow-down/></p>
+    </ul>
+</div>

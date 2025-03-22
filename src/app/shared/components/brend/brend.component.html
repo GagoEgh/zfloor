@@ -1,0 +1,17 @@
+<div class="container">
+    <h5>{{brend()?.name}} ({{brend()?.type?.length}})</h5>
+    <ul>
+        @for(type of brend()?.type; track type; let index= $index){
+            @if(index<7 && !allColors()){
+                <li class="type-list" (click)="secletColor(type)">
+                    {{type}}
+                </li>   
+            }@else if( allColors()) {
+                <li class="type-list" (click)="secletColor(type)">
+                 {{type}}
+                </li>
+            }
+        }
+        <p class="showAll" (click)="showAll()">Показать все<zfloor-arrow-down/></p>
+    </ul>
+</div>

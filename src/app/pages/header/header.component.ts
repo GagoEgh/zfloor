@@ -8,7 +8,7 @@ import { ShopingCardIcon } from '../../shared/ui/icons/shoping-card.icon';
 import { BurgerIcon } from '../../shared/ui/icons/burger.icon';
 import { ButtonElement } from '../../shared/ui/button.element';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { CatalogComponent } from '../catalog/catalog.component';
+import { CatalogComponent } from './catalog/catalog.component';
 import { PathInterface } from '../../shared/type/path.interface';
 import { CommonModule } from '@angular/common';
 
@@ -45,7 +45,6 @@ export class HeaderComponent {
   public isCatalog = signal(false)
   public addClass(){
     this.isCatalog.update((current:boolean)=>current = !current);
-    console.log(this.isCatalog())
   }
 
   changeClass(){
